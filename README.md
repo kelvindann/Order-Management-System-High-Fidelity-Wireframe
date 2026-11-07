@@ -8,7 +8,7 @@ ITEC 80 (Human-Computer Interaction) — High-Fidelity Interactive Prototype
    (You can also just double-click `index.html` to open it in a browser. Internet is needed for Google Fonts only.)
 
 ## Login
-Username: `aleng_admin`   Password: `lechon123`
+Click **Login** to open the app. Username and password checks are temporarily disabled.
 
 ## Files
 - `index.html` — page shell

@@ -16,6 +16,11 @@ const server = http.createServer(async (req, res) => {
 });
 
 (async () => {
+  for (const file of ['script.js', 'styles.css']) {
+    const source = await fs.readFile(path.join(root, file), 'utf8');
+    assert.ok(!/^(?:<<<<<<<|=======|>>>>>>>|\|\|\|\|\|\|\|)/m.test(source), `Unresolved merge conflict in ${file}`);
+    if (file.endsWith('.js')) new (require('node:vm').Script)(source, { filename: file });
+  }
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const browser = await chromium.launch({ headless: true, ...(process.env.BROWSER_PATH ? { executablePath: process.env.BROWSER_PATH } : {}) });
   const context = await browser.newContext({ acceptDownloads: true, timezoneId: 'Asia/Manila' });
