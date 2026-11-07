@@ -32,6 +32,7 @@ td{padding:12px 14px;border-bottom:1px solid var(--line);font-size:14px}tbody tr
 .sg{position:absolute;left:0;right:0;top:100%;background:var(--card);border:1px solid var(--line);border-radius:9px;z-index:5;box-shadow:0 8px 20px #0002;overflow:hidden}.sg div{padding:9px 12px;cursor:pointer;font-size:14px}.sg div:hover{background:var(--bg)}
 .emp{text-align:center;padding:36px;color:var(--mut)}.sp{width:16px;height:16px;border:2px solid #fff6;border-top-color:#fff;border-radius:50%;animation:r .7s linear infinite}@keyframes r{to{transform:rotate(1turn)}}
 @media(max-width:900px){.app{flex-direction:column}aside{width:100%;height:auto;position:static;flex-direction:row;overflow-x:auto;padding:10px}.brand,.cap{display:none}.nv{width:auto;white-space:nowrap}.g3{grid-template-columns:1fr}.g3>div{border:0;border-bottom:1px solid var(--line)}.body{padding:16px}header{padding:0 16px}.tw{overflow-x:auto}}
+<<<<<<< HEAD
 @media(max-width:900px){
   aside{align-items:center;gap:8px;min-width:0;max-width:100%;overscroll-behavior-x:contain}
   aside nav{display:flex;gap:4px;flex:0 0 auto}
@@ -91,3 +92,5 @@ td{padding:12px 14px;border-bottom:1px solid var(--line);font-size:14px}tbody tr
   .ts span{min-width:0;overflow-wrap:anywhere}
   .ts button{flex-shrink:0;min-height:44px;min-width:44px}
 }
+=======
+>>>>>>> be12cfe96be3e0a75484cc2975c6993004ec850a
